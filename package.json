@@ -1,0 +1,33 @@
+{
+  "name": "private-gate",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Private Gate — attestation-gated claim drops for Mina. Prove a fact privately, claim once.",
+  "license": "MIT",
+  "homepage": "https://private-gate.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panagot/private-gate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/panagot/private-gate/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test:smoke": "node scripts/smoke-wallet.mjs && node scripts/smoke-links.mjs && node scripts/smoke-security.mjs && node scripts/smoke-demo-ledger.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "oxlint": "^1.0.0",
+    "vite": "^7.1.0"
+  }
+}
